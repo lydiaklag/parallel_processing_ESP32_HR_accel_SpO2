@@ -12,7 +12,9 @@ The SpO2 measurements take place only when there is no movement.
 Event groups are being used to synchronise all the tasks that run in parallel.
 The acceleration task runs in Core 0, the HR and the SpO2 tasks run in Core 1.
 
-The data is being displayed in the format of a website. That was build using html, CSS, Javascript. 
+The data is being displayed in the format of a website. This website is hosted in ESP32, in the local network.
+To access it, run the code in VSC and copy and paste the IP of the ESP32 that is shown in the Serial Monitor of VSC, at your browser.
+The website was built using html, CSS, Javascript. 
 The charts are displayed with the aid of the Highcharts Javascrupt library.
 The html file is located inside the folder "data".
 That file is transfered to the microcontroller using SPIFFS.
